@@ -8,6 +8,13 @@ public class CashbackHackService {
         return boundary - amount % boundary;
     }
 
+    public int thousand(int amount) {
+        if (amount == 1000) {
+            return 0;
+        }
+        return amount;
+    }
+
     public int bonus (int amount) {
         if (amount < 1000) {
             return 0;

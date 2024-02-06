@@ -17,12 +17,12 @@ public class CashbackHackServiceTest {
         org.junit.Assert.assertEquals(actual, expected);
     }
     @Test
-    public void testRemainThousand() {
+    public void testThousand() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int amount = 1000;
 
-        int actual = cashbackHackService.remain(amount);
-        int  expected = 0;
+        int expected = cashbackHackService.remain(amount);
+        int  actual = 0;
 
         org.junit.Assert.assertEquals(actual, expected);
     }
